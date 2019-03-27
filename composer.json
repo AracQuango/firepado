@@ -1,0 +1,7 @@
+{
+  "name": "AracQuango/Firepado",
+  "description": "An easy to use, basic, MVC Framework (???). (programmed in MS DOS, ported to php) (HAHA CAN YOU IMAGINE)",
+  "require": {
+    "php": "^5.6.3 || ^7.0"
+  }
+}
