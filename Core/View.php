@@ -97,8 +97,7 @@ class View {
      * @return string
      */
     private function getPath() {
-        $path = Config::get("path", "base") . Config::get("path", "views") . $this->view . ".loli.php";
-        return $path;
+        return Config::get("path", "base") . Config::get("path", "views") . $this->view . ".loli.php";
     }
 
     /**
