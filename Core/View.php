@@ -61,7 +61,7 @@ class View {
      * @param array $specificVariables: the variables specific to that view
      */
     public function __construct($viewName, Array $specificVariables) {
-        $this->cache = new Store(new File());
+        $this->cache = new Store(new File);
         $this->view = $viewName;
         $this->specificVariables = $specificVariables;
         if (strpos($this->view, "."))
@@ -97,8 +97,7 @@ class View {
      * @return string
      */
     private function getPath() {
-        $path = Config::get("path", "base") . Config::get("path", "views") . $this->view . ".loli.php";
-        return $path;
+        return Config::get("path", "base") . Config::get("path", "views") . $this->view . ".loli.php";
     }
 
     /**
