@@ -56,10 +56,7 @@ class Config {
      */
     public static function get($subject, $key, $default = null) {
         if (!isset(self::$config[$subject][$key])) {
-            if ($default === null)
-                return $key;
-            else
-                return $default;
+            return (is_null($default) ? $key : $default);
         }
 
         return self::$config[$subject][$key];
